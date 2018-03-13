@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html>
-  <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SaysShoot</title>
-    <link rel="stylesheet" href="/screen.css">
-  </head>
-  <body>
-    <h1>Hello, World!</h1>
-    <script src="/main.js" charset="utf-8"></script>
-  </body>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SaysShoot</title>
+  <link rel="stylesheet" href="./screen.css">
+</head>
+
+<body>
+  <header>
+    <h1>Rock, Paper, Scissors...</h1>
+    <h1 class="larger-font">Says Shoot!</h1>
+  </header>
+  <section class="player-container">
+    <section class="PlayerOne">
+      <h1 class="namePlayerTwo">Player One</h1>
+      <button type="button" onclick="p1rock()">rock</button>
+      <button type="button" onclick="p1paper()">paper</button>
+      <button type="button" onclick="p1scissors()">scissors</button>
+      <section>
+        <ol id="choiceLog1"></ol>
+      </section>
+    </section>
+    <section class="PlayerTwo">
+      <h1 class="namePlayerTwo">Player Two</h1>
+      <button type="button" onclick="p2rock()">rock</button>
+      <button type="button" onclick="p2paper()">paper</button>
+      <button type="button" onclick="p2scissors()">scissors</button>
+    </section>
+  </section>
+  <section class="center-results">
+      <button type="button" onclick="compare(player1Choice, player2Choice)">PLEASE GOD</button>
+  </section>
+  <!-- <section class="center-results">
+      <button type="button" onclick="comparevscomputer(player1Choice, player2Choice)">PLEASE GOD</button>
+  </section>
+  <section class</section> -->
+
+
+
+
+
+  
+
+
+
+
+  <script src="./main.js" charset="utf-8"></script>
+</body>
+
 </html>
